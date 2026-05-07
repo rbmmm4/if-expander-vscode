@@ -1,0 +1,35 @@
+{
+    "name": "if-expander",
+    "displayName": "If Expander",
+    "description": "Expande ifs de una línea a bloque con llaves automáticamente",
+    "version": "1.0.0",
+    "publisher": "rbenitez-dev",
+    "engines": { "vscode": "^1.85.0" },
+    "categories": ["Formatters"],
+    "activationEvents": ["onLanguage:apex", "onLanguage:javascript"],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "if-expander.expand",
+                "title": "If Expander: Expand If Blocks (añadir llaves)"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "if-expander.expand",
+                "key": "ctrl+shift+alt+i"
+            }
+        ],
+        "configuration": {
+            "title": "If Expander",
+            "properties": {
+                "if-expander.expandOnSave": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Expandir ifs automáticamente al guardar"
+                }
+            }
+        }
+    }
+}
