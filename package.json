@@ -3,7 +3,7 @@
     "displayName": "If Expander",
     "description": "Expande ifs de una línea a bloque con llaves automáticamente",
     "version": "1.0.0",
-    "publisher": "rbenitez-dev",
+    "publisher": "rbmmm4",
     "engines": { "vscode": "^1.85.0" },
     "categories": ["Formatters"],
     "activationEvents": ["onLanguage:apex", "onLanguage:javascript"],
